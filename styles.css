@@ -1531,21 +1531,21 @@ details[open] > summary {
 
 /* Background images for each event */
 .event-widget[open].first-event {
-  background-image: url('Events-background-content/hyrox.png');
+  background-image: url('events-background-content/hyrox.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .event-widget[open].second-event {
-  background-image: url('Events-background-content/ultra-x.jpg');
+  background-image: url('events-background-content/ultra-x.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .event-widget[open].third-event {
-  background-image: url('Events-background-content/220.png');
+  background-image: url('events-background-content/220.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
