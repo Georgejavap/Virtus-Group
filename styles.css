@@ -8,13 +8,22 @@ html, body {
 }
 
 
-/* Set default font and black background for the entire site */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #000000;
+/* Reset and normalize base styles */
+html {
+  font-size: 16px;
+  zoom: 1; /* Prevent default browser zoom */
+  scroll-behavior: smooth;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
 
 /* Apply box-sizing globally and remove default spacing */
 * {
@@ -1597,11 +1606,8 @@ details[open] > summary {
 
 /* General paragraph style */
 p {
-    font-size: 30px;
-    line-height: 1.5;
-    color: #000000;
-    text-align: center;
-    margin: 20px 0;
+  margin-bottom: 1.2rem;
+  font-size: clamp(1rem, 2.5vw, 1.25rem); /* Responsive text size */
 }
 
 /* Styled content box for centered, readable text */
@@ -1668,10 +1674,11 @@ section {
     background: rgb(38, 38, 38); /* Dark grey background */
     width: 100%;
     min-height: 50vh;
+    max-width: 1200px;
     margin: 0 auto 0px auto;
     padding: 60px 20px;
     scroll-margin-top: 120px; /* Anchor offset */
-    max-width: none;
+   
 }
 
 /* Section heading styling */
@@ -1906,4 +1913,23 @@ footer {
 }
 .social-media img:hover {
     transform: scale(2.0); /* Dramatic zoom effect on hover */
+}
+
+/* === MEDIA QUERIES FOR BETTER RESPONSIVENESS === */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  section, .container, .main-section {
+    padding: 15px;
+  }
 }
