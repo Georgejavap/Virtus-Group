@@ -111,25 +111,69 @@ body {
   }
 }
 
-@media (max-width: 390px) {
-  .video-desktop { display: none; }
-  .video-mobile { display: block; }
-  nav ul.top-nav li a { font-size: 0.8rem; }
-  .membership-sections {
-    grid-template-columns: 1fr;
+/* GENERAL MOBILE RESET */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
   }
-  .about-grid-layout {
+
+  /* --- BANNER STYLING --- */
+  .top-banner {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding-bottom: 60px; /* space for nav */
   }
-  .home-widget-front-photos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+
+  /* --- NAVIGATION INSIDE BANNER BOTTOM --- */
+  .top-banner nav {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 0;
+  }
+
+  .top-banner nav a {
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+
+  /* --- ICON FIX --- */
+  .icon-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
   }
-  .timeline-column {
-    width: 100%;
+
+  .icon-row img,
+  .icon-row .icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  /* --- PARAGRAPH STACKING --- */
+  .info-paragraphs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 15px;
+  }
+
+  .info-paragraphs p {
+    font-size: 16px;
+    line-height: 1.6;
   }
 }
+
 /* Main header block containing logo and nav — overlays video */
 header {
   position: relative;
