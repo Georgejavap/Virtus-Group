@@ -111,6 +111,25 @@ body {
   }
 }
 
+@media (max-width: 390px) {
+  .video-desktop { display: none; }
+  .video-mobile { display: block; }
+  nav ul.top-nav li a { font-size: 0.8rem; }
+  .membership-sections {
+    grid-template-columns: 1fr;
+  }
+  .about-grid-layout {
+    flex-direction: column;
+  }
+  .home-widget-front-photos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .timeline-column {
+    width: 100%;
+  }
+}
 /* Main header block containing logo and nav — overlays video */
 header {
   position: relative;
