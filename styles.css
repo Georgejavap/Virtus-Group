@@ -1365,7 +1365,7 @@ nav .top-nav li a:hover {
 #events {
     background-color: #000000; /* Solid black background */
     display: flex;
-    flex-direction: row; /* Stack children vertically */
+    flex-direction: column; /* Stack children vertically */
     justify-content: space-between;
     width: 100%;
     padding: 20px 10px;
@@ -2005,6 +2005,10 @@ footer {
 
   nav ul.top-nav li {
     padding: 8px 0;
+  }
+  
+  nav ul.top-nav li a {
+    font-size: 1.2rem;
   }
 
   .home-widget-front-photos {
