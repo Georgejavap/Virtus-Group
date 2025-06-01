@@ -1387,7 +1387,7 @@ nav .top-nav li a:hover {
 .event-widgets-container {
   display: flex;
   flex-wrap: wrap; /* Wrap to new row if needed */
-  gap: 20px;
+  gap: 30px;
   justify-content: center;
   align-items: flex-start;
   margin: 0 auto; /* Center container */
@@ -1396,17 +1396,19 @@ nav .top-nav li a:hover {
 
 /* Individual Event Widget Style */
 .event-widget {
-  width: 500px;
-  min-width: 400px;
-  height: auto; /* Adjust height to fit content */
+  flex: 1 1 400px; /* Grow/shrink with a base size */
+  max-width: 500px;
+  min-width: 300px;
+  height: auto; /* Maintain content-fit */
   border-radius: 20px;
   overflow: hidden;
-  background-color: #000000; /* Match section background */
+  background-color: #000000;
   margin-bottom: 20px;
   position: relative;
   display: flex;
   flex-direction: column;
 }
+
 
 /* Summary Styling */
 .event-widget summary {
@@ -1664,6 +1666,24 @@ details[open] > summary {
 
   .event-feature-box {
     flex: 1 1 100%; /* Full width on small screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .event-widget {
+    flex: 1 1 calc(33.33% - 40px);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .event-widget {
+    flex: 1 1 calc(50% - 40px);
+  }
+}
+
+@media (max-width: 767px) {
+  .event-widget {
+    flex: 1 1 100%;
   }
 }
 
