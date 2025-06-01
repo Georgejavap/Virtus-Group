@@ -4,7 +4,7 @@ html, body {
   font-size: 1rem;
   zoom: 100%;
   max-width: 100%;
-  overflow-x: hidden;
+  
 }
 
 
@@ -64,7 +64,7 @@ body {
 .top-banner {
     position: sticky; /* Stays fixed at top when scrolling */
     top: 0;
-    height: 18%; /* Responsive height based on viewport */
+    height: auto; /* Responsive height based on viewport */
     width: 100%;
     background-color: rgba(0, 0, 0, 1); /* Solid black */
     color: white;
@@ -127,7 +127,7 @@ body {
     align-items: center;
     text-align: center;
     position: relative;
-    padding-bottom: 60px; /* space for nav */
+    padding-bottom: 10px; /* space for nav */
   }
 
   /* --- NAVIGATION INSIDE BANNER BOTTOM --- */
