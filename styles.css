@@ -63,7 +63,7 @@ body {
 .top-banner {
     position: sticky; /* Stays fixed at top when scrolling */
     top: 0;
-    height: 18vh; /* Responsive height based on viewport */
+    height: 18%; /* Responsive height based on viewport */
     width: 100%;
     background-color: rgba(0, 0, 0, 1); /* Solid black */
     color: white;
@@ -1393,6 +1393,7 @@ nav .top-nav li a:hover {
   align-items: flex-start;
   margin: 0 auto; /* Center container */
   width: 100%;
+  max-width: 1400px;
 }
 
 /* Individual Event Widget Style */
