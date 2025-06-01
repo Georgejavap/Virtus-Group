@@ -266,9 +266,9 @@ nav .top-nav li a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90vw;
+    width: 90%;
     max-width: 800px;
-    height: 80vh;
+    height: 80%;
     max-height: 900px;
     background: white;
     border-radius: 12px;
@@ -292,7 +292,7 @@ nav .top-nav li a:hover {
     position: absolute;
     top: 10px;
     right: 14px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -1365,7 +1365,7 @@ nav .top-nav li a:hover {
 #events {
     background-color: #000000; /* Solid black background */
     display: flex;
-    flex-direction: column; /* Stack children vertically */
+    flex-direction: row; /* Stack children vertically */
     justify-content: space-between;
     width: 100%;
     padding: 20px 10px;
@@ -1393,7 +1393,7 @@ nav .top-nav li a:hover {
   align-items: flex-start;
   margin: 0 auto; /* Center container */
   width: 100%;
-  max-width: 1400px;
+  max-width: 1800px;
 }
 
 /* Individual Event Widget Style */
