@@ -1396,13 +1396,12 @@ nav .top-nav li a:hover {
 
 /* Individual Event Widget Style */
 .event-widget {
-  flex: 1 1 400px; /* Grow/shrink with a base size */
-  max-width: 500px;
-  min-width: 300px;
-  height: auto; /* Maintain content-fit */
+  width: 500px;
+  min-width: 400px;
+  height: auto; /* Adjust height to fit content */
   border-radius: 20px;
   overflow: hidden;
-  background-color: #000000;
+  background-color: #000000; /* Match section background */
   margin-bottom: 20px;
   position: relative;
   display: flex;
@@ -1669,23 +1668,6 @@ details[open] > summary {
   }
 }
 
-@media (min-width: 1024px) {
-  .event-widget {
-    flex: 1 1 calc(33.33% - 40px);
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .event-widget {
-    flex: 1 1 calc(50% - 40px);
-  }
-}
-
-@media (max-width: 767px) {
-  .event-widget {
-    flex: 1 1 100%;
-  }
-}
 
 /* General paragraph style */
 p {
