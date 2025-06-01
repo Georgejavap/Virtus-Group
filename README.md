@@ -197,6 +197,17 @@ Below is visual proof of the key testing stages.
 ![Desktop View 3](docs/validation/responsive-desktop-2.png)  
 ![Desktop View 4](docs/validation/responsive-desktop-3.png)
 
+
+## 🎨 Project Display Note
+
+While developing this project, my goal was to create a polished and fully responsive events section, with smooth full-screen overlays, centered content, and clean layout transitions — as shown in my development environment screenshots.
+
+However, due to limitations with GitHub Pages and how it handles rendering and styling updates (particularly with some CSS rules and layout behaviors), I wasn't fully able to replicate the final look as seen locally. Some elements, such as the expanded event widget overlays and centered text alignment, did not render exactly as expected once deployed.
+
+Despite multiple commits and refinement attempts, the live version on GitHub Pages fell slightly short of the intended finish. This project still demonstrates the key functionality and design direction I was working toward, and the screenshots included represent the more accurate, polished version I achieved in my local environment.
+
+> ⚠️ _Note: If certain layouts appear slightly off on GitHub Pages, please refer to the provided screenshots for the original intended design._
+
 ---
 
 
