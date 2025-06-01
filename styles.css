@@ -1978,100 +1978,114 @@ footer {
     transform: scale(2.0); /* Dramatic zoom effect on hover */
 }
 
-/* === MEDIA QUERIES FOR BETTER RESPONSIVENESS === */
+/* === MOBILE FIRST: iPhone 13 (390px width) === */
 @media (max-width: 390px) {
-  /* Shrink top banner and nav */
+  body {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.3rem;
+  }
+
   .top-banner {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  .top-banner img {
-    width: 120px;
-    height: auto;
-  }
-
-  .top-banner h1 {
-    font-size: 1.5rem;
-  }
-
-  .top-nav {
+  nav ul.top-nav {
     flex-direction: column;
-    padding: 0;
+  }
+
+  nav ul.top-nav li {
+    padding: 8px 0;
+  }
+
+  .home-widget-front-photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
   }
 
-  /* Shrink general content */
-  body, html {
-    font-size: 14px;
+  .membership-sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
   }
 
-  /* Fix event widgets */
+  .about-grid-layout {
+    flex-direction: column;
+  }
+
+  .timeline-column,
+  .about-features {
+    width: 100%;
+  }
+
   .event-widgets-container {
+    flex-direction: column;
+  }
+
+  .event-widget {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .trainer-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+
+/* === TABLETS (768px and below) === */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  .top-banner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-grid-layout {
     flex-direction: column;
     gap: 20px;
   }
 
-  .event-widget video {
-    width: 100%;
-    height: auto;
-  }
-
-  .event-widget-content {
-    padding: 10px;
-  }
-
-  /* Make home-widget images display 2 by 2 */
-  .home-widget-photos {
-    display: grid;
+  .membership-sections {
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
   }
 
-  .home-widget-photos img {
-    width: 100%;
-    height: auto;
-  }
-
-  /* Fix resources icons layout */
-  .resources-icons {
-    display: grid;
+  .home-widget-front-photos {
     grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+  }
+}
+
+
+/* === LAPTOPS (1024px and below) === */
+@media (max-width: 1024px) {
+  body {
+    font-size: 16px;
   }
 
-  .resources-icons img {
-    width: 100%;
-    height: auto;
+  .top-banner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  /* Trainer section image fix */
-  .trainer-container img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: auto;
+  .membership-sections {
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  /* Membership login layout */
-  .membership-section {
-    flex-direction: column;
-    gap: 15px;
-    padding: 10px;
-  }
-
-  .membership-section iframe,
-  .membership-section video {
-    width: 100%;
-    height: auto;
-  }
-
-  /* Prevent overflow */
-  * {
-    max-width: 100%;
-    box-sizing: border-box;
-    overflow-x: hidden;
+  .home-widget-front-photos {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
