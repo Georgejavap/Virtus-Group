@@ -1680,7 +1680,7 @@ details[open] > summary {
 p {
     font-size: 1.2rem;
     line-height: 1.6;
-    color: #ffffff; /* White text for readability */
+    color: #000000; /* White text for readability */
     margin: 0 0 20px; /* Spacing below paragraphs */
 }
 
